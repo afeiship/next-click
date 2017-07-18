@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Title</title>
+  <style type="text/css">
+    button{
+      width:100%;
+      padding:20px 20px;
+      background: #007aff;
+      color:#fff;
+      border: none;
+      border-radius: 5px;
+      margin-bottom:20px;
+    }
+
+    button:active{
+      background: #00f;;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Has Fastclick</h2>
+<div class="has-fastclick">
+  <button>Click1</button>
+  <button>Click2</button>
+</div>
+
+
+<h2>No Fastclick</h2>
+<div class="no-fastclick">
+  <button>Click1</button>
+  <button>Click2</button>
+</div>
+
+<script type="text/javascript" src="../node_modules/next-js-core2/dist/next-js-core2.js"></script>
+<script type="text/javascript" src="../src/next-click.js"></script>
+
+<script type="text/javascript">
+  nx.Click.attach(document.querySelector('.has-fastclick'));
+</script>
+</body>
+</html>
